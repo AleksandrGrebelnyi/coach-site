@@ -1,0 +1,17 @@
+{% load static %}
+<section id="contacts" class="contact-section">
+    <div class="footer">
+        <div class="kontakts">КОНТАКТЫ</div>
+            <div class="inner-cont">
+                {% for contact in contacts %}
+                <div class="tel-number">{{ contact.title }} {{ contact.phone }}</div>
+                {% endfor %}
+                <a href="https://t.me/aleksandr_grebelnyi" target="_blank"><img src="{% static 'img/telega.png' %}" class="icon" alt=""></a>
+                <a href="viber://chat?number=380938665321" target="_blank"><img src="{% static 'img/viber.png' %}" class="icon" alt=""></a>
+            </div>
+        <div class="social-image">
+            <a href="https://www.youtube.com/channel/UCOeW0WVlcWArwxYqnGSo76Q" target="_blank"><img src="{% static 'img/youtube.png' %}" class="icon" alt=""></a>
+            <a href="https://www.instagram.com/_aleksandr_grebelnyi/" target="_blank"><img src="{% static 'img/instagram.png' %}" class="icon" alt=""></a>
+        </div>
+    </div>
+</section>

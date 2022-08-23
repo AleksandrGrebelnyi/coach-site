@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{%  load static %}
+
+{% block inner %}
+    <!-- ======= Start Cards ======= -->
+    {%  include 'cards.html' %}
+    <!-- ======= End Cards ======= -->
+
+<!-- ======= Customer results slider photo before/after ======= -->
+    {%  include 'customer_result.html' %}
+    <!-- End customer results -->
+
+<!-- ---------Tariffs price----------- -->
+    {%  include 'tariffs.html' %}
+<!-- ----------------End tariffs-price section------------------- -->
+
+<!-- ----------------Start about me------------------- -->
+    {%  include 'about_me.html' %}
+<!-- ----------------End about me------------------- -->
+
+<!-- ----------- Start Book A program lose weight ------------- -->
+    {%  include 'book_a_program.html' %}
+<!-- ----------- End Book A program lose weight ------------- -->
+
+<!-- ----------- Start contacts/footer ------------- -->
+    {% include 'contacts.html' %}
+<!-- ----------- End contacts ------------- -->
+{% endblock %}

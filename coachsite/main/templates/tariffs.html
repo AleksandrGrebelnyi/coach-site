@@ -1,0 +1,55 @@
+{% load static %}
+<section id="tariffs">
+        <div class="tariffs">
+            <div class="container">
+                <div class="tariffs-title">
+                    ВЫБРАТЬ ТАРИФ
+                </div>
+                <div class="tariff-items">
+        <!-- ----1 First tariff card---- -->
+                        <div class="tariff-item">
+                            <div class="tariff-image">
+                                <img src="{% static 'img/marathontariff.png' %}" class="tariff-img" alt="">
+                            </div>
+                            {% for price in tariffs %}
+                                {%  if forloop.first %}
+                            <div class="tariff-title-cards">
+                                {{ price.title }}
+                            </div>
+
+                            <div class="tariff-text">
+                                {{ price.description }}
+                            </div>
+                                {% endif %}
+                            {% endfor %}
+                            <div class="tariff-button">
+                                <a href="#book-a-program" class="tariff-btn">
+                                    ЗАКАЗАТЬ
+                                </a>
+                            </div>
+                        </div>
+        <!-- ---2 Second tariff card--- -->
+                        <div class="tariff-item">
+                            <div class="tariff-image">
+                                <img src="{% static 'img/personaltariff.png' %}" class="tariff-img" alt="">
+                            </div>
+                            {% for price in tariffs %}
+                                {%  if forloop.last %}
+                            <div class="tariff-title-cards">
+                                {{ price.title }}
+                            </div>
+                            <div class="tariff-text">
+                                {{ price.description }}
+                            </div>
+                                {% endif %}
+                            {% endfor %}
+                            <div class="tariff-button">
+                                <a href="#book-a-program" class="tariff-btn">
+                                    ЗАКАЗАТЬ
+                                </a>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</section>

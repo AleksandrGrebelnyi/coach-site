@@ -1,0 +1,80 @@
+{% load static %}
+<section id="aboutme">
+        <div class="info-slider-feedback">
+            <div class="container">
+                <div class="about-me-feedback-title">
+                    КТО Я ТАКОЙ + ОТЗЫВЫ
+                </div>
+                <div class="all-info-items">
+        <!-- ----1 First tariff card---- -->
+                        <div class="holder-2-cards1">
+                            <div class="tariff-image">
+                                <img src="{% static 'img/logoo.png' %}" class="tariff-img" alt="">
+                            </div>
+                        </div>
+
+        <!-- ---2 Second tariff card--- -->
+                        <div class="holder-2-cards2">
+                            <div class="slider2">
+                                <div><img src="{% static 'img/feedbackimg/feed1.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed2.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed3.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed4.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed5.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed6.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed7.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed8.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed9.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed10.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed11.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed13.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed14.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed15.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed16.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed17.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed18.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed20.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed21.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed22.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed23.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed24.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed25.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed26.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed27.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed28.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed29.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed30.png' %}" alt=""></div>
+                                <div><img src="{% static 'img/feedbackimg/feed31.png' %}" alt=""></div>
+                            </div>
+                        </div>
+                </div>
+                {% for info in about_me %}
+                <div class="about-me-title">
+                    ОПЫТ РАБОТЫ <span>{{ info.title }}</span>
+                </div>
+                <div class="my-info-text">
+                    {{ info.description }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+            <div class="holder-3-cards3">
+                    <div class="slider3">
+                        <div><img src="{% static 'img/certificates/cert1.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert6.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert2.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert3.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert4.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert5.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert7.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert8.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert9.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert10.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert11.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert12.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert13.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert14.png' %}" class="diploma_img" alt=""></div>
+                        <div><img src="{% static 'img/certificates/cert15.png' %}" class="diploma_img" alt=""></div>
+                    </div>
+            </div>
+</section>

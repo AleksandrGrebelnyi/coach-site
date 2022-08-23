@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Grebelnyi Aleksandr">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Slick Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"/>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,500;8..144,600;8..144,1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:wght@300;400;500;600;800&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,500;8..144,600;8..144,1000&display=swap" rel="stylesheet">
+    <title>Похудение</title>
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+</head>
+
+<body>
+
+<!-- ======= Header Bar ======= -->
+
+<section class="header">
+    <div class="container">
+        <div class="header-line">
+            <div class="header-logo">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="burger-menu">
+                <button id="burger" class="bt">
+                    <img class="img-burger" src="{% static 'img/burger2.png' %}" alt="">
+                </button>
+                <div id="menu" class="nav disp">
+                    <a class="nav-item block" href="#">Главная</a>
+                    <a class="nav-item block" href="#results">Результаты участниц</a>
+                    <a class="nav-item block" href="#tariffs">Выбрать тариф</a>
+                    <a class="nav-item block" href="#aboutme">Обо мне</a>
+                    <a class="nav-item block" href="#contacts">Контакты</a>
+                </div>
+            </div>
+                <div class="header-logo">
+                    <img src="{% static 'img/beforeafterlogo.png' %}" alt="">
+            </div>
+
+        </div>
+         <div class="header-title">
+                        ТЕПЕРЬ ТОЧНО ПОЛУЧИТСЯ ПОХУДЕТЬ
+                    <div class="header-btn">
+                    <a href="#book-a-program" class="header-button">ЗАКАЗАТЬ</a>
+                    </div>
+
+                    </div>
+    </div>
+</section><!-- ======= End Header Bar ======= -->
+
+
+<main class="main">
+
+    {% block inner %}
+    {% endblock %}
+
+</main>
+<!-- Button TO-TOP-->
+<a href="#" class="bt-to-top"></a>
+<!-- JS library jquery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- slick -->
+<script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+<!-- Main JS File -->
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

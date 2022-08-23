@@ -1,0 +1,818 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+
+.container {
+    margin: 0 130px;
+
+}
+
+.header {
+    background-image: url(../img/bg.jpg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-line {
+    padding-top: 50px;
+    display: flex;
+    align-items: normal;
+    justify-content: space-around;
+}
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 610;
+    margin-right: 1px;
+    border-right: 1px solid black;
+    padding-inline: 7px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: #003cfc;
+    text-decoration: underline;
+    transition: color 0.2s linear;
+}
+
+.header-title {
+    color: deeppink;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    top: 0;
+    margin-top: -100px;
+    margin-left: -30px;
+}
+
+.header-btn {
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.header-button {
+    color: white;
+    text-decoration: none;
+    background-color: #4f60fd;
+    border-radius: 99px;
+    padding: 14px 28px;
+    font-size: 16px;
+}
+
+.header-button:hover {
+    transition: all 500ms ease;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #394bf5;
+    outline: none;
+}
+
+.main {
+    flex: 1 1 auto;
+    overflow: hidden;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --------CARD--------- */
+
+.cards-title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+    color: deeppink;
+    background-color: #ffffff;
+}
+
+.cards-title span {
+    color: #003cfc;
+}
+
+.cards-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 349px;
+    box-shadow: 10px 10px 40px 20px lightgrey;
+    margin-right: 20px;
+    background-color: #f0f9ff;
+    padding: 0 10px;
+    filter: brightness(1.0);
+    justify-content: center;
+}
+
+.card:hover{
+    filter: brightness(1.1);
+    width: 351px;
+    box-shadow: 10px 10px 40px 10px green;
+}
+
+.card-image {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid deeppink;
+}
+
+.card_text {
+    justify-content: center;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.card_text span {
+    color: red;
+    font-weight: 500;
+}
+
+/* --------Slider clients result-------- */
+.customer-results {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    color: deeppink;
+    font-weight: 1000;
+    font-size: 35px;
+}
+
+.customer-results:hover {
+    color: #3658c2;
+    /*font-size: 40px;*/
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+.client-results-holder1 {
+    max-height: 350px;
+    max-width: 350px;
+    margin: auto;
+    padding: 30px;
+    background-color: #3658c2;
+    margin-top: 40px;
+}
+
+.client-results-holder2 {
+    margin: auto;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.client-results-holder2-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    color: #003cfc;
+}
+
+.info-lose-weight-text {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.about-results-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+
+/* ------------Button scroll up to the TOP PAGE ----*/
+
+.bt-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    border: transparent;
+    border-radius: 50%;
+    background-color: hotpink;
+}
+
+.bt-to-top:hover,
+.bt-to-top:focus {
+    filter: brightness(1.2);
+    outline: none;
+}
+/* ----------Create string on button-------- */
+.bt-to-top::before,
+.bt-to-top::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bt-to-top::before {
+    width: 5px;
+    height: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #ffffff;
+}
+
+.bt-to-top::after {
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+}
+
+/* -------------Tariffs/Prices-----------  */
+.tariffs {
+    background-image: url(../img/bg.jpg);
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.tariffs-title {
+    text-align: center;
+    color: #3658c2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 1000;
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+
+.tariffs-title:hover {
+    color: deeppink;
+}
+
+.tariff-item {
+    background-color: #f8fcff;
+    text-align: center;
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+}
+
+.tariff-item:hover {
+    box-shadow: 5px 5px 40px 5px green;
+    filter: brightness(1.1);
+}
+
+.tariff-title-cards {
+    font-family: 'Montserrat', sans-serif;
+    color: deeppink;
+    font-weight: 600;
+}
+
+.tariff-text {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 400;
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.tariff-btn {
+    background-color: #4f60fd;
+    border-radius: 99px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px 0 lightgrey;
+}
+
+.tariff-btn:hover {
+    transition: all 500ms ease;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #394bf5;
+    outline: none;
+}
+
+.tariff-button {
+    margin-top: 20px;
+}
+
+.tariff-items {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------------Start about me------------------------- */
+.info-slider-feedback {
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+    background-color: white;
+    padding-top: 30px;
+}
+
+.about-me-feedback-title {
+    text-align: center;
+    color: #3658c2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 1000;
+    padding-bottom: 20px;
+}
+
+.about-me-feedback-title:hover {
+    color: deeppink;
+}
+
+.holder-2-cards1 {
+    text-align: center;
+    width: 45%;
+    max-height: 500px;
+    max-width: 550px;
+    margin-top: 5px;
+    padding: 30px;
+}
+
+.tariff-img {
+    margin: 0;
+}
+
+.about-me-title {
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    font-weight: 600;
+    margin-top: 50px;
+    border-bottom: #003cfc;
+    padding-left: 113px;
+}
+
+.about-me-title span {
+    font-size: 20px;
+}
+
+.my-info-text {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 110px;
+}
+
+.holder-2-cards2 {
+    text-align: center;
+    width: 45%;
+    max-height: 300px;
+    max-width: 400px;
+    margin-top: 35px;
+    padding: 30px;
+    background-color: #3658c2;
+}
+
+.holder-2-cards2:hover {
+    background-color: dodgerblue;
+}
+
+.all-info-items {
+    display: flex;
+    justify-content: center;
+}
+
+.holder-3-cards3 {
+    width: 50%;
+    max-height: 350px;
+    max-width: 450px;
+    padding: 30px;
+    background-color: #3658c2;
+    margin-left: 300px;
+}
+
+.holder-3-cards3:hover {
+    background-color: dodgerblue;
+}
+
+.diploma_img {
+    margin-left: 50px;
+}
+
+/* -------------BOOK a program-------------- */
+.book-a-program {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.book-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: deeppink;
+    font-weight: 600;
+    margin-top: 50px;
+    border-bottom: #003cfc;
+    padding-left: 40px;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.book-title:hover {
+    color: #003cfc;
+}
+
+.mention-book {
+    text-align: center;
+}
+
+.form-control {
+    width: 350px;
+}
+
+.form-group {
+    margin-left: 0;
+}
+
+.btn-css {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    background-color: #4f60fd;
+    border-radius: 99px;
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px 0 lightgrey;
+    border: none;
+
+}
+
+.btn-css:hover {
+    transition: all 500ms ease;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #394bf5;
+    outline: none;
+}
+
+.holder-book-card {
+    background-color: #dfe6ff;
+    max-height: 300px;
+    max-width: 350px;
+    margin-left: 250px;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 50px 5px #c9c8c8;
+}
+
+/*------------ Start contacts -------------*/
+
+.contact-section {
+    background-image: url(../img/bgfoot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    margin-top: -50px;
+    height: 170px;
+}
+
+.kontakts {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 50px;
+    border-bottom: #003cfc;
+    padding-left: 40px;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.inner-cont {
+    margin-left: 250px;
+}
+
+.social-image {
+    text-align: center;
+    margin-left: 500px;
+    margin-top: -55px;
+    vertical-align: top;
+}
+.bt {
+    display: none;
+}
+
+/*===================================================*/
+/* ------------------------MEDIA------------------ */
+
+/*--------------------- Start FOOTER ----------------*/
+
+@media (max-width: 1145px) {
+    .contact-section {
+        vertical-align: auto;
+        position: static;
+    }
+
+    .footer {
+        position: static;
+    }
+
+    .kontakts {
+        text-align: unset;
+        margin-left: 100px;
+    }
+
+    .social-image {
+        display: block;
+    }
+    .social-image img {
+        display: block;
+        vertical-align: auto;
+        position: static;
+        margin-left: -450px;
+        margin-top: -105px;
+        padding-right: 100px;
+        margin-bottom: 110px;
+    }
+    /*---------------------------End footer-------------------*/
+
+    /*---------------------Start BOOK----------------------*/
+    .book-a-program {
+        display: block;
+        padding-bottom: 1px;
+        margin-top: -35px;
+
+    }
+
+    .section-book-title {
+        display: block;
+        font-size: 14px;
+        margin-left: -40px;
+    }
+
+    .holder-book-card {
+        display: block;
+        margin-left: -30px;
+        position: static;
+        vertical-align: auto;
+        max-width: 300px;
+    }
+
+    .form-class {
+        display: block;
+        margin-right: auto;
+
+    }
+
+    .form-control {
+        width: 300px;
+    }
+
+    .btn-css {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .container {
+        margin: 50px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .mention-book {
+        text-align: center;
+    }
+
+    .book-title {
+        text-align: center;
+        padding-top: 3px;
+    }
+
+    .book-title h2 {
+        font-size: 20px;
+
+    }
+
+/*---------------------END BOOK----------------------*/
+/*================ Start about me + feedbacks ================*/
+    .holder-3-cards3 {
+        margin-left: 10px;
+        width: 350px;
+    }
+
+    .diploma_img {
+        margin-left: 7px;
+    }
+
+    .my-info-text {
+        padding-left: 10px;
+        font-size: 11px;
+        margin-bottom: -95px;
+    }
+
+    .about-me-title {
+        margin-top: 15px;
+        margin-bottom: -10px;
+        font-size: 11px;
+    }
+
+    .about-me-title span {
+        font-size: 15px;
+    }
+
+    .all-info-items {
+        display: block;
+    }
+
+    .holder-2-cards2 {
+        margin-left: 5px;
+        width: 350px;
+    }
+
+    .slider2 {
+        margin-left: 5px;
+    }
+
+    .info-slider-feedback {
+        margin-left: -45px;
+    }
+
+    .holder-2-cards1 {
+        margin-bottom: -61px;
+
+    }
+
+    .about-me-feedback-title {
+        margin-bottom: -37px;
+        font-size: 20px;
+        margin-top: -70px;
+    }
+
+/* =================== tariffs-price section  =================== */
+    .tariff-items {
+        margin-bottom: -115px;
+    }
+
+    .tariffs-title {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .tariff-title-cards {
+        font-size: 12px;
+        color: deeppink;
+    }
+
+    .tariff-text {
+        font-size: 11px;
+    }
+
+/*  <!-- ======= Start Slider photo before/after ======= -->*/
+    .customer-results {
+        margin-bottom: -75px;
+    }
+
+    .customer-results {
+        margin-top: 50px;
+        font-size: 22px;
+    }
+    .customer-results:hover {
+        font-size: 24px;
+    }
+
+    .wrapper {
+        margin-top: 80px;
+    }
+
+    .client-results-holder1 {
+        margin-left: 5px;
+        width: 350px;
+    }
+
+    .slider {
+        margin-left: 5px;
+    }
+
+    .about-results-items {
+        display: block;
+    }
+/*  <!-- ======= End Slider photo before/after ======= -->*/
+
+
+    /*<!-- ============== End Cards ============= -->*/
+    .cards-holder {
+        display: block;
+        margin-top: 230px;
+        margin-left: -13px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card:hover {
+        width: 220px;
+    }
+
+    .cards-title {
+        margin-top: 30px;
+        font-size: 18px;
+        margin-bottom: -290px;
+    }
+
+/*    <!-- ============== End Cards ================== --> */
+
+    /*<!-- =============== Start Header Bar ======= -->*/
+    .header-title {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .header-btn {
+        display: none;
+        margin-top: -35px;
+    }
+
+    .header-line {
+        padding-top: 0;
+        margin-bottom: -22px;
+    }
+    .body {
+        margin-top: -72px;
+    }
+
+    .header {
+        padding-top: 1px;
+    }
+
+    .nav-item {
+        display: block;
+        border-right: none;
+        /*border-bottom: 2px solid blue;*/
+        font-size: 12px;
+        text-align: center;
+    }
+    /*<!-- =============== End Header Bar ======= -->*/
+    /*<!-- =============== Start burger menu ======= -->*/
+    .block {
+        display: block;
+        text-align: left;
+    }
+
+    .bt {
+        display: block;
+    }
+
+    .disp {
+        display: none;
+    }
+    button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .img-burger {
+        cursor: pointer;
+    }
+
+    .img-burger:hover {
+        filter: brightness(0.9);
+    }
+}
+ /*<!-- =============== End burger menu ======= -->*/
+
