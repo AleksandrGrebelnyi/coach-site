@@ -23,8 +23,13 @@ class AboutMeAdmin(admin.ModelAdmin):
     list_display = ('title', 'description',)
 
 
+class UserReservationAdmin(admin.ModelAdmin):
+    list_display = ('date', 'name', 'phone',)
+
+
 admin.site.register(models.ForWhom, ForWhomAdmin)
 admin.site.register(models.CustomerResult, CustomerResultAdmin)
 admin.site.register(models.Tariffs, TariffsAdmin)
 admin.site.register(models.AboutMe, AboutMeAdmin)
 admin.site.register(models.Contacts, ContactsAdmin)
+admin.site.register(models.UserReservation, UserReservationAdmin)
