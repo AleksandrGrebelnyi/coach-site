@@ -11,8 +11,20 @@ class ContactsAdmin(admin.ModelAdmin):
     list_display = ('title', 'phone',)
 
 
+class CustomerResultAdmin(admin.ModelAdmin):
+    list_display = ('title', 'description',)
+
+
+class TariffsAdmin(admin.ModelAdmin):
+    list_display = ('title', 'description',)
+
+
+class AboutMeAdmin(admin.ModelAdmin):
+    list_display = ('title', 'description',)
+
+
 admin.site.register(models.ForWhom, ForWhomAdmin)
-admin.site.register(models.CustomerResult)
-admin.site.register(models.Tariffs)
-admin.site.register(models.AboutMe)
+admin.site.register(models.CustomerResult, CustomerResultAdmin)
+admin.site.register(models.Tariffs, TariffsAdmin)
+admin.site.register(models.AboutMe, AboutMeAdmin)
 admin.site.register(models.Contacts, ContactsAdmin)
