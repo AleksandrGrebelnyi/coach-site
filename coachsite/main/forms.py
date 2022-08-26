@@ -2,6 +2,8 @@ from django import forms
 from .models import UserReservation
 from django.core.validators import RegexValidator
 
+# create form for customer to collect customer data
+
 
 class CustomerContactForm(forms.ModelForm):
     name = forms.CharField(
