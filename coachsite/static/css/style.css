@@ -576,6 +576,10 @@ label {
         padding-right: 100px;
         margin-bottom: 110px;
     }
+
+    .tel-number {
+        font-size: 20px;
+    }
     /*---------------------------End footer-------------------*/
 
     /*---------------------Start BOOK----------------------*/
@@ -593,10 +597,10 @@ label {
     }
 
     .holder-book-card {
-        /*display: flex;*/
-        margin-left: auto;
+        display: block;
+        margin: auto;
         position: static;
-        /*vertical-align: auto;*/
+        vertical-align: auto;
         max-width: 300px;
         max-height: 300px;
     }
@@ -639,7 +643,7 @@ label {
 /*---------------------END BOOK----------------------*/
 /*================ Start about me + feedbacks ================*/
     .holder-3-cards3 {
-        margin-left: auto;
+        margin: auto;
         width: 350px;
     }
 
@@ -668,20 +672,20 @@ label {
     }
 
     .holder-2-cards2 {
-        margin-left: auto;
+        margin: auto;
         width: 350px;
     }
 
-    .slider2 {
-        margin-left: 5px;
-    }
+    /*.slider2 {*/
+    /*    margin-left: 5px;*/
+    /*}*/
 
     .info-slider-feedback {
         margin-left: -45px;
     }
 
     .holder-2-cards1 {
-        margin-bottom: -61px;
+        margin: auto;
 
     }
 
@@ -703,12 +707,12 @@ label {
     }
 
     .tariff-title-cards {
-        font-size: 15px;
+        font-size: 18px;
         color: deeppink;
     }
 
     .tariff-text {
-        font-size: 13px;
+        font-size: 16px;
     }
 
 /*  <!-- ======= Start Slider photo before/after ======= -->*/
@@ -729,7 +733,7 @@ label {
     }
 
     .client-results-holder1 {
-        margin-left: auto;
+        margin: auto;
         width: 350px;
     }
 
@@ -743,32 +747,32 @@ label {
 /*  <!-- ======= End Slider photo before/after ======= -->*/
 
 
-    /*<!-- ============== End Cards ============= -->*/
+    /*<!-- ============== Start Cards ============= -->*/
     .cards-holder {
         display: block;
-        margin-top: 230px;
-        margin-left: auto;
+        /*margin-top: 230px;*/
+        margin: auto;
     }
 
     .card {
-        width: 350px;
+        width: auto;
     }
 
-    .card:hover {
-        width: 370px;
-    }
+    /*.card:hover {*/
+    /*    width: 370px;*/
+    /*}*/
 
     .cards-title {
         margin-top: 30px;
-        font-size: 18px;
-        margin-bottom: -290px;
+        font-size: 20px;
+        /*margin-bottom: -290px;*/
     }
 /*    <!-- ============== End Cards ================== --> */
 
     /*<!-- =============== Start Header Bar ======= -->*/
     .header-title {
-        margin-top: 30px;
-        font-size: 24px;
+        margin-top: 10px;
+        font-size: 25px;
     }
 
     .header-btn {
