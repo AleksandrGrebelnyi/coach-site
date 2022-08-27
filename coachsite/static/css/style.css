@@ -593,10 +593,10 @@ label {
     }
 
     .holder-book-card {
-        display: block;
-        margin-left: -30px;
+        /*display: flex;*/
+        margin-left: auto;
         position: static;
-        vertical-align: auto;
+        /*vertical-align: auto;*/
         max-width: 300px;
         max-height: 300px;
     }
@@ -639,7 +639,7 @@ label {
 /*---------------------END BOOK----------------------*/
 /*================ Start about me + feedbacks ================*/
     .holder-3-cards3 {
-        margin-left: 10px;
+        margin-left: auto;
         width: 350px;
     }
 
@@ -668,7 +668,7 @@ label {
     }
 
     .holder-2-cards2 {
-        margin-left: 5px;
+        margin-left: auto;
         width: 350px;
     }
 
@@ -703,12 +703,12 @@ label {
     }
 
     .tariff-title-cards {
-        font-size: 12px;
+        font-size: 15px;
         color: deeppink;
     }
 
     .tariff-text {
-        font-size: 11px;
+        font-size: 13px;
     }
 
 /*  <!-- ======= Start Slider photo before/after ======= -->*/
@@ -729,7 +729,7 @@ label {
     }
 
     .client-results-holder1 {
-        margin-left: 5px;
+        margin-left: auto;
         width: 350px;
     }
 
@@ -747,15 +747,15 @@ label {
     .cards-holder {
         display: block;
         margin-top: 230px;
-        margin-left: -13px;
+        margin-left: auto;
     }
 
     .card {
-        width: 200px;
+        width: 350px;
     }
 
     .card:hover {
-        width: 220px;
+        width: 370px;
     }
 
     .cards-title {
@@ -763,13 +763,12 @@ label {
         font-size: 18px;
         margin-bottom: -290px;
     }
-
 /*    <!-- ============== End Cards ================== --> */
 
     /*<!-- =============== Start Header Bar ======= -->*/
     .header-title {
         margin-top: 30px;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .header-btn {
@@ -779,10 +778,10 @@ label {
 
     .header-line {
         padding-top: 0;
-        margin-bottom: -22px;
+        margin-bottom: auto;
     }
     .body {
-        margin-top: -72px;
+        margin-top: auto;
     }
 
     .header {
@@ -790,10 +789,10 @@ label {
     }
 
     .nav-item {
-        display: block;
+        display: flex;
         border-right: none;
         /*border-bottom: 2px solid blue;*/
-        font-size: 12px;
+        font-size: 20px;
         text-align: center;
     }
     /*<!-- =============== End Header Bar ======= -->*/
