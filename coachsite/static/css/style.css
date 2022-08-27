@@ -12,7 +12,7 @@ body {
 
 .header {
     background-image: url(../img/bg.jpg);
-    height: 60vh;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -115,7 +115,7 @@ body {
 
 .card:hover{
     filter: brightness(1.1);
-    width: 351px;
+    /*width: 351px;*/
     box-shadow: 10px 10px 40px 10px green;
 }
 
